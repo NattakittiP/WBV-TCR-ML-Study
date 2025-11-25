@@ -20,7 +20,7 @@ import xgboost as xgb
 import shap
 
 # ------------ Config ------------
-CSV_PATH = r"C:\Users\Sabi\Desktop\Ohm_files\WBV_TCR_ICBCB2026_Synthetic_1500_precise_v2 (2).csv"
+CSV_PATH = r"???"
 FEATURES = ["WBV","Hematocrit","TotalProtein","TG0h","TG4h","Age","Sex","HDL","LDL","BMI"]
 SEED = 42
 TEST_SIZE = 0.20
@@ -236,3 +236,4 @@ weights = (coefs/np.sum(np.abs(coefs))).fillna(0)
 risk_points = (weights.abs()/weights.abs().max()*100).round().astype(int)
 risk_points.sort_values(ascending=False).to_csv(OUTDIR/"risk_points_0_100.csv")
 print("[DONE] Results saved to", OUTDIR.resolve())
+
