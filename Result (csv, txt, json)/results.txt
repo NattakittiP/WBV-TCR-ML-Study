@@ -1,0 +1,19 @@
+=== Cross-Validation (Stratified, 5-fold) ===
+LogReg      ROC-AUC 0.999±0.000 | PR-AUC 0.998±0.001
+RandForest  ROC-AUC 0.981±0.006 | PR-AUC 0.942±0.023
+
+=== Test Set ===
+LogReg      ROC-AUC=1.000  PR-AUC=1.000  F1=0.949  ACC=0.973  CM=[[217, 8], [0, 75]]
+RandForest  ROC-AUC=0.988  PR-AUC=0.967  F1=0.861  ACC=0.937  CM=[[222, 3], [16, 59]]
+
+Top Feature Importance (RF):
+TG4h            0.508143
+TG0h            0.204226
+Age             0.051704
+HDL             0.042338
+LDL             0.041450
+TotalProtein    0.037901
+BMI             0.037720
+WBV             0.035845
+Hematocrit      0.035498
+Sex             0.005176
